@@ -6,3 +6,9 @@ Controller-Service-DAO :
 
 # Employee Manager
 Rest api for performing GET,PUT,POST operations using JPA. On an attempt to get a employee with id that doesn't exist, you'll get employees with last 100 ids
+
+# SecurityEmailDemo
+A rest api with the following 3 end points:
+1) POST - for registration, send in username and password as json data; accessible to all
+2) GET - for login, send username and password(not as json but in postman auth section); no output mean wrong credentials
+3) PUT - for changing password, send username and password as you did  for login. Additionally, send a json data having username,previousPassword, newPassword and email. This will send you an email notification with new password.
