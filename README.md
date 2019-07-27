@@ -12,3 +12,4 @@ A rest api with the following 3 end points:
 1) POST - for registration, send in username and password as json data; accessible to all
 2) GET - for login, send username and password(not as json but in postman auth section); no output mean wrong credentials
 3) PUT - for changing password, send username and password as you did  for login. Additionally, send a json data having username,previousPassword, newPassword and email. This will send you an email notification with new password.
+  {UPDATE}: OAuth2 feature added for login end point, client ID and secret can be found in AuthenticationServerConfig class. Retreive access token from "/oauth/token" endpoint with POST request and use it as header for login.  
